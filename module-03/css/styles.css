@@ -1,0 +1,36 @@
+body {
+    background-image: url("http://shugaev.su/wp-content/uploads/2015/07/6.jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh.;
+
+    
+    
+    
+}
+.wrapper {
+    background-color: white;
+    
+    margin-right:auto;
+    margin-left:auto;
+    width: 480px;
+    
+    
+}
+.text{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+    img {
+    width: 430px;   
+}
+hr {
+    border: none;
+    background-color: grey;
+    height: 1px;
+}
+.left{
+
+}
+.right{
+    block-size: 200px;
+}
