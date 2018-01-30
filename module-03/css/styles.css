@@ -1,24 +1,20 @@
 body {
-    background-image: url("http://shugaev.su/wp-content/uploads/2015/07/6.jpg");
-    background-repeat: no-repeat;
-    min-height: 100vh.;
-
-    
-    
-    
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;  
 }
 .wrapper {
     background-color: white;
-    
     margin-right:auto;
     margin-left:auto;
-    width: 480px;
-    
-    
+    width: 480px;      
+}
+img {
+    height: 170px;
+    width: 430px;
 }
 .text{
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 5%;
+    
 }
     img {
     width: 430px;   
@@ -28,9 +24,19 @@ hr {
     background-color: grey;
     height: 1px;
 }
-.left{
+.content{
+    font-size: 0%;
+}
 
+ul{
+    display: inline-block;
+    width: 50%;
+    list-style: none;    
 }
-.right{
-    block-size: 200px;
+li {
+    font-size: 14px;
 }
+*{
+    box-sizing: border-box;
+}
+
