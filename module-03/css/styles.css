@@ -1,6 +1,9 @@
+.h2 {
+    font-family: "Pathway Gothic One";
+}
 body {
     background-image: url(../img/background.png);
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 }
 .wrapper {
     background-color: white;
@@ -9,19 +12,23 @@ body {
     width: 480px;      
 }
 img {
-    height: 170px;
-    width: 430px;
+    height: 98px;
+    width: 406px;
+}
+p {
+    color: black;
 }
 .text{
+    font-size: 17px;
     padding: 5%;
-    
+    color: #263555;  
 }
     img {
     width: 430px;   
 }
 hr {
     border: none;
-    background-color: grey;
+    background-color: #dedbdb;
     height: 1px;
 }
 .content{
