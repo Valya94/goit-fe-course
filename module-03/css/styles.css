@@ -1,5 +1,7 @@
-.h2 {
+h2 {
     font-family: "Pathway Gothic One";
+    font-size: 25px;
+    font-weight: normal;
 }
 body {
     background-image: url(../img/background.png);
@@ -17,11 +19,27 @@ img {
 }
 p {
     color: black;
+    
+    
 }
 .text{
-    font-size: 17px;
-    padding: 5%;
-    color: #263555;  
+    font-family: Arial;
+    letter-spacing: normal;
+    line-height: 17px;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 6%;
+    color: #263555;
+    
+    
+
+}
+h4 {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 19px;
+    transform: 100%;
+    font-weight: normal;
 }
     img {
     width: 430px;   
