@@ -1,0 +1,117 @@
+h2 {
+    font-family: "Pathway Gothic One";
+    color: #263555;
+
+}
+body {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat; 
+    counter-reset: count-section;
+}
+section {
+    counter-increment: count-section;
+    counter-reset: count-article1;
+}
+article {
+    counter-increment: count-article1;
+    counter-reset: count-healine;
+}
+h2 {
+    counter-increment: count-healine;
+}
+
+.wrapper {
+    background-color: white;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 230px;
+    width: 1024px;
+}
+.block1{
+    width: 1024px;
+    margin: 0 auto;
+}
+.block1 .article{
+    display: inline-block;
+    width: 640px;  
+    padding: 5%; 
+    vertical-align: bottom;  
+}
+.textleft{
+    font-family: Arial;
+    line-height: 19px;
+}
+h4 {
+    font-size: 15px;
+    line-height: 19px;
+    color: #263555;
+}
+p {
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 19px;
+}
+.block1 .sidebar{
+    display: inline-block;
+    width: 200px;
+    vertical-align: bottom;
+}
+
+img {
+    width: 362px;
+    height: 281px;
+    margin-left: -3%;
+    float: left;
+    margin: 4px 25px 2px 0px;
+}
+.text {
+    padding: %;
+    
+}
+.leftimg{
+    float: left;   
+}
+.block2 {
+    width: 1024px;
+    margin: 0 auto;
+}
+.block2 .article {
+    display: inline-block;
+    width: 640px;  
+    padding: 5%;
+}
+hr {
+    border: none;
+    background-color:  #dedbdb;
+    height: 2px;
+    width: 900px;
+}
+.block2 .text{
+    display: inline-block;
+    width: 200px;
+}
+ul {
+    counter-reset: principles;
+}
+li:before {
+    counter-increment: principles;
+    content: " " counter(principles) " "; 
+    position: absolute;
+   
+    top:3px; 
+    left: -40px;
+    background: #38afe5;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    
+
+}
+li{
+    list-style: none;
+    position: relative;
+}
