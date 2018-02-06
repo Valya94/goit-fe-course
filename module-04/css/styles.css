@@ -30,12 +30,14 @@ h2 {
 .block1{
     width: 1024px;
     margin: 0 auto;
+    padding: 5%;
+
 }
 .block1 .article{
     display: inline-block;
     width: 640px;  
-    padding: 5%; 
-    vertical-align: bottom;  
+     
+    vertical-align: top;  
 }
 .textleft{
     font-family: Arial;
@@ -45,6 +47,7 @@ h4 {
     font-size: 15px;
     line-height: 19px;
     color: #263555;
+    
 }
 p {
     font-family: Arial;
@@ -53,8 +56,9 @@ p {
 }
 .block1 .sidebar{
     display: inline-block;
-    width: 200px;
-    vertical-align: bottom;
+    margin-left: 5%;
+    width: 230px;
+    vertical-align: top;
 }
 
 img {
@@ -64,40 +68,25 @@ img {
     float: left;
     margin: 4px 25px 2px 0px;
 }
-.text {
-    padding: %;
-    
-}
+
 .leftimg{
     float: left;   
-}
-.block2 {
-    width: 1024px;
-    margin: 0 auto;
-}
-.block2 .article {
-    display: inline-block;
-    width: 640px;  
-    padding: 5%;
 }
 hr {
     border: none;
     background-color:  #dedbdb;
     height: 2px;
     width: 900px;
+    margin-left: 1%;
 }
-.block2 .text{
-    display: inline-block;
-    width: 200px;
-}
-ul {
+
+.over{
     counter-reset: principles;
 }
-li:before {
+.over .rav:before {
     counter-increment: principles;
     content: " " counter(principles) " "; 
     position: absolute;
-   
     top:3px; 
     left: -40px;
     background: #38afe5;
@@ -108,10 +97,75 @@ li:before {
     border-radius: 50%;
     text-align: center;
     color: white;
-    
-
 }
-li{
+li {
     list-style: none;
     position: relative;
+}
+.block2 {
+    width: 1024px;
+    margin: 0 auto;
+    
+}
+.block2 .article {
+    display: inline-block;
+    width: 640px;  
+    vertical-align: top;
+    margin-left: 5%;
+
+}
+
+.block2 .testimonian{
+    display: inline-block;
+    width: 200px;
+    margin-left: 5%;
+    vertical-align: top;
+}
+#rectangle {
+    width: 210px;
+    height: 190px;
+    background: #fcfafa;
+    outline: 2px solid  rgba(223, 220, 220, 1);
+    padding: 5%;
+}
+.center {
+    text-align: center;
+
+}
+h3 {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 23px;
+    color: #263555;
+}
+.block3{
+    display:inline-block;
+    width: 640px;
+    padding: 5%;
+    margin-top: -8%;
+    
+}
+
+.ul .nav{
+    list-style: none;
+    display:block;
+    width:49%;
+    float:left;
+}
+
+
+.nav {
+    
+    font-family: Arial; 
+    font-size: 15px;
+    line-height: 40px; 
+}  
+
+.nav:before {
+    content: "→";
+    color: #38afe5;
+    padding: 10px;
+    margin-left: -15%;
+   
+
 }
