@@ -1,6 +1,8 @@
 h2 {
     font-family: "Pathway Gothic One";
     color: #263555;
+    font-size: 32px;
+    font-weight: 400;
 
 }
 body {
@@ -44,9 +46,11 @@ h2 {
     line-height: 19px;
 }
 h4 {
+    font-family: Arial;
     font-size: 15px;
     line-height: 19px;
     color: #263555;
+    
     
 }
 p {
@@ -76,8 +80,8 @@ hr {
     border: none;
     background-color:  #dedbdb;
     height: 2px;
-    width: 900px;
-    margin-left: 1%;
+    width: 925px;
+    margin-left: 5%;
 }
 
 .over{
@@ -90,9 +94,9 @@ hr {
     top:3px; 
     left: -40px;
     background: #38afe5;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     display: block;
     border-radius: 50%;
     text-align: center;
@@ -128,6 +132,12 @@ li {
     outline: 2px solid  rgba(223, 220, 220, 1);
     padding: 5%;
 }
+.paragraph {
+    text-indent: 10px;
+    margin-left: 5%;
+    font-size: 15px;
+    line-height: 19px;
+}
 .center {
     text-align: center;
 
@@ -140,9 +150,9 @@ h3 {
 }
 .block3{
     display:inline-block;
-    width: 640px;
-    padding: 5%;
-    margin-top: -8%;
+    width: 580px;
+    
+    margin-bottom: 5%;
     
 }
 
@@ -159,13 +169,12 @@ h3 {
     font-family: Arial; 
     font-size: 15px;
     line-height: 40px; 
+    
 }  
 
 .nav:before {
     content: "→";
     color: #38afe5;
     padding: 10px;
-    margin-left: -15%;
-   
-
+  
 }
