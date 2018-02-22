@@ -10,7 +10,6 @@ background-repeat: no-repeat;
 }
 .menu {
     list-style: none;
-    
     padding: 10px;
     font-size: 28px;
     text-transform: uppercase;
@@ -189,6 +188,9 @@ li:hover ul {
     outline: none !important
     }
 
+.buttons {
+    position: absolute; bottom: 90px; left: 20px;
+}
 .halfСircle1 {
     width: 45px;
     height: 80px;
@@ -196,7 +198,7 @@ li:hover ul {
     border-bottom-left-radius: 40px;
     background: #38afe5;
     display: inline-block;
-    position: relative; bottom:200px; left: 20px;
+    
     color: white;
     border: none;
 }
@@ -208,7 +210,7 @@ li:hover ul {
     border-bottom-right-radius: 40px;
     background: #38afe5;
     display: inline-block;
-    position: relative; bottom:200px; left: 20px;
+    
     color: white;
     border: none;
     margin: -85px;
@@ -258,7 +260,7 @@ img {
     display: none;
     font-family: Arial;
     font-size: 11px;
-    font-weight: 10;
+    font-weight: normal;
     position: absolute; top: 24px; left: 24px;
 }
 .blocks2:hover .hover_new_york{
