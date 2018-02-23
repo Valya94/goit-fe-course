@@ -1,0 +1,155 @@
+.wrapper {
+    background-color: white;
+    width: 1200px;
+    margin-right:auto;
+    margin-left:auto;
+}
+.block1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #95e1d3;
+}
+
+ul{
+    list-style: none; 
+}
+
+ul .menu li{
+    display: inline;
+    margin-right: 5px;
+    padding: 10px;
+}
+.menu-about {
+    position: relative;
+    display:inline-flex;
+}
+.menu-service {
+    position: relative;
+    display: inline-flex;
+}
+.menu-work {
+    position:relative;
+    display: inline-flex;
+}
+.menu-blog {
+    position: relative;
+    display: inline-flex;
+}
+.menu-contact {
+    position: relative;
+    display: inline-flex;
+}
+
+
+li a{
+    font-family: 'Montserrat', sans-serif;
+    color: #95e1d3;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 20px;
+}
+li a:hover {
+    color: #f38181;
+}
+ul li::before {
+    display: none;
+    position: absolute; top: 105px; 
+    margin-right: 10px;
+    weight: 3px;
+    content: "";
+    color: #f38181;
+}
+.block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1px;
+}
+
+h4 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: normal;
+    color: #333333;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #333333;
+}
+.block3 {
+    display: inline-flex;
+    justify-content: center;
+}
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #b6b6b6;
+}
+.photography {
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+}
+.photography img{
+    position: absolute; top: 310px; left: 90px;
+}
+.foto {
+    padding-left: 30px;
+}
+.web_desing {
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+}
+.web_desing img {
+    position: absolute; top: 310px; left: 490px;
+}
+.foto2 {
+    padding-left: 30px;
+}
+.creativity {
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+}
+.creativity img{
+    position: absolute; top: 310px; right: 420px;
+}
+.foto3 {
+    padding-left: 30px;
+}
+.block4 {
+    display: flex;
+    justify-content: center;
+}
+.seo {
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+}
+.seo img{
+    position: absolute; top: 520px; left: 90px;
+}
+.foto4 {
+    padding-left: 30px;
+}
+.block5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1px;
+}
