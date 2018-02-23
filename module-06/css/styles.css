@@ -105,7 +105,7 @@ p {
     padding: 20px;
 }
 .photography img{
-    position: absolute; top: 310px; left: 90px;
+    position: absolute; top: 310px; left: 190px;
 }
 .foto {
     padding-left: 30px;
@@ -133,7 +133,7 @@ p {
     padding-left: 30px;
 }
 .block4 {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 }
 .seo {
