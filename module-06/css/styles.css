@@ -100,60 +100,86 @@ p {
     color: #b6b6b6;
 }
 .photography {
-    width: 400px;
-    margin: 30px;
-    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    padding: 30px;
 }
 .photography img{
     position: absolute; 
     top: 310px; 
-    left: 190px;
+    left: 200px;
 }
 .foto {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .web_desing {
-    width: 400px;
-    margin: 30px;
-    padding: 20px;
+    width: 300px;
+    margin: 20px;
+   padding: 30px;  
 }
 .web_desing img {
     position: absolute; 
     top: 310px; 
-    left: 490px;
+    left: 600px;
 }
 .foto2 {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .creativity {
-    width: 400px;
-    margin: 30px;
-    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    padding: 30px;
 }
 .creativity img{
     position: absolute; 
     top: 310px; 
-    right: 420px;
+    right: 550px;
 }
 .foto3 {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .block4 {
     display: inline-flex;
     justify-content: center;
 }
 .seo {
-    width: 400px;
-    margin: 30px;
-    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    padding: 30px;
 }
 .seo img{
     position: absolute; 
     top: 520px; 
-    left: 90px;
+    left: 200px;
 }
 .foto4 {
-    padding-left: 30px;
+    padding-left: 20px;
+}
+.css_html {
+    width: 300px;
+    margin: 20px;
+    padding: 30px;
+}
+.css_html img {
+    position: absolute;
+    top: 520px;
+    left: 600px;
+}
+.foto5 {
+    padding-left: 20px;
+}
+.digital {
+    width: 300px;
+    margin: 20px;
+    padding: 30px;
+}
+.digital img {
+    position: absolute;
+    top : 520px;
+    right: 550px;
+}
+.foto6 {
+    padding-left: 20px;
 }
 .block5 {
     display: flex;
