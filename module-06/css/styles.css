@@ -105,7 +105,9 @@ p {
     padding: 20px;
 }
 .photography img{
-    position: absolute; top: 310px; left: 190px;
+    position: absolute; 
+    top: 310px; 
+    left: 190px;
 }
 .foto {
     padding-left: 30px;
@@ -116,7 +118,9 @@ p {
     padding: 20px;
 }
 .web_desing img {
-    position: absolute; top: 310px; left: 490px;
+    position: absolute; 
+    top: 310px; 
+    left: 490px;
 }
 .foto2 {
     padding-left: 30px;
@@ -127,7 +131,9 @@ p {
     padding: 20px;
 }
 .creativity img{
-    position: absolute; top: 310px; right: 420px;
+    position: absolute; 
+    top: 310px; 
+    right: 420px;
 }
 .foto3 {
     padding-left: 30px;
@@ -142,7 +148,9 @@ p {
     padding: 20px;
 }
 .seo img{
-    position: absolute; top: 520px; left: 90px;
+    position: absolute; 
+    top: 520px; 
+    left: 90px;
 }
 .foto4 {
     padding-left: 30px;
