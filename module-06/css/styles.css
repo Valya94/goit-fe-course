@@ -58,11 +58,11 @@ li a:hover {
     color: #f38181;
 }
 ul li::before {
-    display: none;
+    
     position: absolute; top: 105px; 
     margin-right: 10px;
-    weight: 3px;
-    content: "";
+    weight: 10px;
+    content: "―――";
     color: #f38181;
 }
 .block2 {
