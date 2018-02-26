@@ -47,6 +47,7 @@ ul .menu li{
 }
 
 
+
 li a{
     font-family: 'Montserrat', sans-serif;
     color: #95e1d3;
@@ -57,13 +58,19 @@ li a{
 li a:hover {
     color: #f38181;
 }
-ul li::before {
-    
-    position: absolute; top: 105px; 
-    margin-right: 10px;
-    weight: 10px;
-    content: "―――";
-    color: #f38181;
+li::after {
+        display: none;
+        content: '';
+        background: #f38181;
+        position: absolute;
+        width: 48px;
+        height: 3px;
+        bottom: 5px;
+        margin: 7px;
+        right: 15px;
+}
+li:hover:after {
+    display: block;
 }
 .block2 {
     display: flex;
@@ -82,6 +89,16 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: #333333;
+}
+.block2::after {
+    content: '';
+    background: #f38181;
+    width: 58px;
+    height: 3px;
+    left: 50%;
+    margin-top: 20px;
+
+
 }
 .block3 {
     display: inline-flex;
@@ -186,4 +203,73 @@ p {
     flex-direction: column;
     align-items: center;
     line-height: 1px;
+}
+.block5::after {
+    content: '';
+    background: #f38181;
+    width: 58px;
+    height: 3px;
+    left: 50%;
+    margin-top: 20px;
+}
+.block6 {
+    display: inline-flex;
+    justify-content: center;
+    width: 970px;
+}
+.block7 {
+    display: inline-flex;
+    justify-content: center;
+
+}
+.fotos1 {
+    position: absolute;
+    left: 192px;
+}
+.fotos2 {
+    position: absolute;
+    left: 576px;
+}
+.fotos3 {
+    position: absolute;
+    top: 880px;
+    left: 960px;
+}
+.icon {
+    display: none;
+}
+.icon:hover .general1 {
+    display: flex;
+}
+.facebook {
+    position: absolute;
+    background: #95e1d3;
+    width: 52px;
+    height: 52px;
+    right: 1270px; 
+    top: 1080px;
+}
+.twitter {
+    position: absolute;
+    background: #fce38a;
+    width: 52px;
+    height: 52px;
+    right: 1216px;
+    top: 1080px;
+}
+.pinterest {
+    position: absolute;
+    background: #fce38a;
+    width: 52px;
+    height: 52px;
+    top: 1080px;
+    right: 1162px;
+}
+.instagram {
+    position: absolute;
+    background: #fce38a;
+    width: 52px;
+    height: 52px;
+    top: 1080px;
+    right: 1109px;
 }
