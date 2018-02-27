@@ -218,27 +218,41 @@ p {
     width: 970px;
 }
 .block7 {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
 
 }
-.fotos1 {
+.general1 {
+    display: inline-flex;
     position: absolute;
-    left: 192px;
+}
+.fotos1 {
+    margin: 15px;
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
 }
 .fotos2 {
-    position: absolute;
-    left: 576px;
+    margin: 15px;
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
 }
 .fotos3 {
-    position: absolute;
-    top: 880px;
-    left: 960px;
+    margin: 15px;
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
+}
+
+.icons {
+    background: linear-gradient(45deg, #f08a8a, #e5cf81);
+    width: 380px;
+    height: 470px;
 }
 .icon {
-    display: none;
+    text-align: center;
 }
-.icon:hover .general1 {
+.icon:hover {
     display: flex;
 }
 .facebook {
@@ -273,3 +287,4 @@ p {
     top: 1080px;
     right: 1109px;
 }
+
