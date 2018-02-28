@@ -226,22 +226,72 @@ p {
     position: absolute;
 }
 .fotos1 {
-    margin: 15px;
+    display: flex;
+    position: relative;
+    margin-left: 30px;
     background-color: #95e1d3;
     width: 380px;
     height: 470px;
+}
+.fotos1 img {
+    background: #fce38a;
+}
+.fotos1 img:hover {
+    background-color: #95e1d3;
 }
 .fotos2 {
-    margin: 15px;
+    display: flex;
+   position: relative;
+   margin-left: 30px;
     background-color: #95e1d3;
     width: 380px;
     height: 470px;
 }
+.fotos2 img {
+    background: #fce38a;
+}
+.fotos2 img:hover {
+    background-color: #95e1d3;
+}
 .fotos3 {
-    margin: 15px;
+    display: flex;
+    position: relative;
+    margin-left: 30px;
     background-color: #95e1d3;
     width: 380px;
     height: 470px;
+}
+.fotos3 img {
+    background-color: #fce38a;  
+}
+.fotos3 img:hover {
+    background-color: #95e1d3;
+}
+.blocks1 {
+    display: none;
+    position: absolute;
+    margin: 15px;
+    width: 380px;
+    height: 470px;
+    background: linear-gradient(45deg, #f08a8a, #e5cf81);
+}
+.blocks2 {
+    display: none;
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background: linear-gradient(45deg, #f08a8a, #e5cf81);
+}
+.blocks3 {
+    display: none;
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background: linear-gradient(45deg, #f08a8a, #e5cf81);
+}
+
+a {
+    text-decoration: none;
 }
 
 .icons {
@@ -287,4 +337,16 @@ p {
     top: 1080px;
     right: 1109px;
 }
+figcaption {
+    line-height: 14px;
+    text-align: center;
+}
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: italic;
+    color: #b6b6b6;
+}
+
 
