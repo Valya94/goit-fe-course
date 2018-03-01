@@ -57,6 +57,8 @@ li a{
 }
 li a:hover {
     color: #f38181;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
 li::after {
         display: none;
@@ -71,6 +73,8 @@ li::after {
 }
 li:hover:after {
     display: block;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
 .block2 {
     display: flex;
@@ -213,42 +217,100 @@ p {
     margin-top: 20px;
 }
 .block6 {
-    display: inline-flex;
-    justify-content: center;
+    margin-left: 110px;
+    display: flex;
+    text-align: center;
     width: 970px;
 }
 .block7 {
     display: flex;
-
+    position: relative;
+    top: 20px;
 }
+
 .general1 {
-    display: inline-flex;
-    position: absolute;
+    display: flex;
+    margin: 20px;
+    position: relative;
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
+}
+.general2 {
+    display: flex;
+    margin: 20px;
+    position: relative;
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
+}
+.general3 {
+    display: flex;
+    margin: 20px;
+    position: relative;
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
 }
 .fotos1 {
     display: flex;
     position: relative;
-    margin-left: 30px;
-    background-color: #95e1d3;
     width: 380px;
     height: 470px;
+    
 }
 .fotos1 img {
-    background: #fce38a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fotos1:hover {
+    transform: translate(-20px, -20px);
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+.fotos2:hover {
+    transform: translate(-20px, -20px);
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+.fotos3:hover {
+    transform: translate(-20px, -20px);
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+
+
+.blocks11 img {
+    top: 200px;
+    left: 70px;
+    background: #fce38a; 
+    position: relative;    
+    width: 56px;
+    height: 56px;
 }
 .fotos1 img:hover {
     background-color: #95e1d3;
 }
+
 .fotos2 {
     display: flex;
-   position: relative;
-   margin-left: 30px;
-    background-color: #95e1d3;
+    position: relative;
     width: 380px;
     height: 470px;
 }
 .fotos2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.blocks22 img {
+    top: 200px;
+    left: 70px;
     background: #fce38a;
+    position: relative;
+    width: 56px;
+    height: 56px;
 }
 .fotos2 img:hover {
     background-color: #95e1d3;
@@ -256,87 +318,68 @@ p {
 .fotos3 {
     display: flex;
     position: relative;
-    margin-left: 30px;
-    background-color: #95e1d3;
     width: 380px;
     height: 470px;
 }
-.fotos3 img {
-    background-color: #fce38a;  
+.fotos3 img {  
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.blocks33 img {
+    top: 200px;
+    left: 70px;
+    background: #fce38a;
+    position: relative;
+    width: 56px;
+    height: 56px;
 }
 .fotos3 img:hover {
     background-color: #95e1d3;
 }
+
+.fotos1:hover .blocks1 {
+    display: block;
+    cursor: pointer;
+}
+.fotos2:hover .blocks2 {
+    display: block;
+    cursor: pointer;
+}
+.fotos3:hover .blocks3 {
+    display: block;
+    cursor: pointer;
+}
 .blocks1 {
     display: none;
     position: absolute;
-    margin: 15px;
     width: 380px;
     height: 470px;
-    background: linear-gradient(45deg, #f08a8a, #e5cf81);
+    
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 }
 .blocks2 {
     display: none;
     position: absolute;
     width: 380px;
     height: 470px;
-    background: linear-gradient(45deg, #f08a8a, #e5cf81);
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 }
 .blocks3 {
     display: none;
     position: absolute;
     width: 380px;
     height: 470px;
-    background: linear-gradient(45deg, #f08a8a, #e5cf81);
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 }
+div
 
 a {
     text-decoration: none;
 }
 
-.icons {
-    background: linear-gradient(45deg, #f08a8a, #e5cf81);
-    width: 380px;
-    height: 470px;
-}
-.icon {
-    text-align: center;
-}
-.icon:hover {
-    display: flex;
-}
-.facebook {
-    position: absolute;
-    background: #95e1d3;
-    width: 52px;
-    height: 52px;
-    right: 1270px; 
-    top: 1080px;
-}
-.twitter {
-    position: absolute;
-    background: #fce38a;
-    width: 52px;
-    height: 52px;
-    right: 1216px;
-    top: 1080px;
-}
-.pinterest {
-    position: absolute;
-    background: #fce38a;
-    width: 52px;
-    height: 52px;
-    top: 1080px;
-    right: 1162px;
-}
-.instagram {
-    position: absolute;
-    background: #fce38a;
-    width: 52px;
-    height: 52px;
-    top: 1080px;
-    right: 1109px;
-}
+
+
 figcaption {
     line-height: 14px;
     text-align: center;
