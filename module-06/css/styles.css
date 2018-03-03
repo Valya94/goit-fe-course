@@ -139,6 +139,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .block2::after {
@@ -149,13 +150,13 @@ li a:hover {
     left: 15px;
     margin-top: 20px;
 }
-h4 {
+.kaushan {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     font-weight: normal;
     color: #333333;
 }
-h2 {
+.montserrat {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: #333333;
@@ -181,7 +182,9 @@ p {
 }
 .block3 {
     display: flex;
+    position: relative;
     justify-content: center;
+    left: 30px;
 }
 .photography {
     width: 300px;
@@ -193,7 +196,7 @@ p {
 .photography img {
     position: relative;
     top: 65px;
-    right: 50px;
+    right: 60px;
 }
 
 .web_desing {
@@ -204,7 +207,7 @@ p {
 .web_desing img{
     position: relative;
     top: 65px;
-    right: 50px;
+    right: 60px;
 }
 
 .creativity {
@@ -215,12 +218,13 @@ p {
 .creativity img{
     position: relative;
     top: 65px;
-    right: 50px;
+    right: 60px;
 }
 
 .block4 {
     display: flex;
     position: relative;
+    left: 30px;
     bottom: 70px;
     justify-content: center;
 }
@@ -232,7 +236,7 @@ p {
 .seo img{
     position: relative; 
     top: 65px;
-    right: 50px;
+    right: 60px;
 }
 
 .css_html {
@@ -243,7 +247,7 @@ p {
 .css_html img {
     position: relative;
     top: 65px;
-    right: 50px;
+    right: 60px;
 }
 
 .digital {
@@ -254,12 +258,13 @@ p {
 .digital img {
     position: relative;
     top: 65px;
-    right: 50px;
+    right: 60px;
 }
 
 .block5 {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
 }
 .block5::after {
@@ -435,14 +440,20 @@ div
 a {
     text-decoration: none;
 }
-
-
-
-figcaption {
-    color: #333333;
-    line-height: 14px;
-    text-align: center;
+figure {
+    width: 1400px;
 }
+figcaption {
+    position: relative;
+    top: 450px;
+    text-align: center;
+    right: 20px;
+    
+}
+figcaption h5 {
+    margin-bottom: -20px;
+}
+
 h6 {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
