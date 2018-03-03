@@ -1,16 +1,15 @@
-.wrapper {
+.container {
     background-color: white;
-    width: 1200px;
-    margin-right:auto;
-    margin-left:auto;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .block1 {
     display: flex;
     justify-content: space-between;
-
 }
 
-h3 {
+.logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: #95e1d3;
@@ -60,18 +59,78 @@ li a:hover {
     transition-timing-function: linear;
     transition-duration: 200ms;
 }
-li::after {
-        display: none;
-        content: '';
-        background: #f38181;
-        position: absolute;
-        width: 48px;
-        height: 3px;
-        bottom: 5px;
-        margin: 7px;
-        right: 15px;
+
+.menu-about::after{
+    display: none;
+    content: '';
+    background: #f38181;
+    position: absolute;
+    width: 52px;
+    height: 3px;
+    bottom: 5px;
+    left: 20px;  
 }
-li:hover:after {
+.menu-about:hover:after {
+    display: block;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+.menu-service::after {
+    display: none;
+    content: '';
+    background: #f38181;
+    position: absolute;
+    width: 62px;
+    height: 3px;
+    bottom: 5px;
+    left: 20px; 
+}
+.menu-service:hover:after {
+    display: block;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+.menu-work::after {
+    display: none;
+    content: '';
+    background: #f38181;
+    position: absolute;
+    width: 48px;
+    height: 3px;
+    bottom: 5px;
+    left: 20px;
+}
+.menu-work:hover:after {
+    display: block;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+.menu-blog::after {
+    display: none;
+    content: '';
+    background: #f38181;
+    position: absolute;
+    width: 48px;
+    height: 3px;
+    bottom: 5px;
+    left: 20px;
+}
+.menu-blog:hover:after {
+    display: block;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+.menu-contact::after {
+    display: none;
+    content: '';
+    background: #f38181;
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    bottom: 5px;
+    left: 20px;
+}
+.menu-contact:hover:after {
     display: block;
     transition-timing-function: linear;
     transition-duration: 200ms;
@@ -80,9 +139,16 @@ li:hover:after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1px;
 }
 
+.block2::after {
+    content: '';
+    background: #f38181;
+    width: 58px;
+    height: 3px;
+    left: 15px;
+    margin-top: 20px;
+}
 h4 {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
@@ -94,19 +160,12 @@ h2 {
     font-size: 30px;
     color: #333333;
 }
-.block2::after {
+section .container::after {
     content: '';
     background: #f38181;
     width: 58px;
     height: 3px;
     left: 50%;
-    margin-top: 20px;
-
-
-}
-.block3 {
-    display: inline-flex;
-    justify-content: center;
 }
 h5 {
     font-family: 'Montserrat', sans-serif;
@@ -120,93 +179,88 @@ p {
     font-weight: normal;
     color: #b6b6b6;
 }
+.block3 {
+    display: flex;
+    justify-content: center;
+}
 .photography {
     width: 300px;
-    margin: 20px;
-    padding: 30px;
+    margin: 30px;
+    padding: 30px
+    
+    
 }
-.photography img{
-    position: absolute; 
-    top: 310px; 
-    left: 200px;
+.photography img {
+    position: relative;
+    top: 65px;
+    right: 50px;
 }
-.foto {
-    padding-left: 20px;
-}
+
 .web_desing {
     width: 300px;
-    margin: 20px;
-   padding: 30px;  
+    margin: 30px;
+    padding: 30px;
 }
-.web_desing img {
-    position: absolute; 
-    top: 310px; 
-    left: 600px;
+.web_desing img{
+    position: relative;
+    top: 65px;
+    right: 50px;
 }
-.foto2 {
-    padding-left: 20px;
-}
+
 .creativity {
     width: 300px;
-    margin: 20px;
+    margin: 30px;
     padding: 30px;
 }
 .creativity img{
-    position: absolute; 
-    top: 310px; 
-    right: 550px;
+    position: relative;
+    top: 65px;
+    right: 50px;
 }
-.foto3 {
-    padding-left: 20px;
-}
+
 .block4 {
-    display: inline-flex;
+    display: flex;
+    position: relative;
+    bottom: 70px;
     justify-content: center;
 }
 .seo {
     width: 300px;
-    margin: 20px;
+    margin: 30px;
     padding: 30px;
 }
 .seo img{
-    position: absolute; 
-    top: 520px; 
-    left: 200px;
+    position: relative; 
+    top: 65px;
+    right: 50px;
 }
-.foto4 {
-    padding-left: 20px;
-}
+
 .css_html {
     width: 300px;
-    margin: 20px;
+    margin: 30px;
     padding: 30px;
 }
 .css_html img {
-    position: absolute;
-    top: 520px;
-    left: 600px;
+    position: relative;
+    top: 65px;
+    right: 50px;
 }
-.foto5 {
-    padding-left: 20px;
-}
+
 .digital {
     width: 300px;
-    margin: 20px;
+    margin: 30px;
     padding: 30px;
 }
 .digital img {
-    position: absolute;
-    top : 520px;
-    right: 550px;
+    position: relative;
+    top: 65px;
+    right: 50px;
 }
-.foto6 {
-    padding-left: 20px;
-}
+
 .block5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1px;
 }
 .block5::after {
     content: '';
@@ -230,7 +284,7 @@ p {
 
 .general1 {
     display: flex;
-    margin: 20px;
+    margin: 15px;
     position: relative;
     background-color: #95e1d3;
     width: 380px;
@@ -238,7 +292,7 @@ p {
 }
 .general2 {
     display: flex;
-    margin: 20px;
+    margin: 15px;
     position: relative;
     background-color: #95e1d3;
     width: 380px;
@@ -246,7 +300,7 @@ p {
 }
 .general3 {
     display: flex;
-    margin: 20px;
+    margin: 15px;
     position: relative;
     background-color: #95e1d3;
     width: 380px;
@@ -264,18 +318,18 @@ p {
     top: 0;
     left: 0;
 }
-.fotos1:hover {
-    transform: translate(-20px, -20px);
+.general1:hover .fotos1{
+    transform: translate(-10px, -10px);
     transition-timing-function: linear;
     transition-duration: 200ms;
 }
-.fotos2:hover {
-    transform: translate(-20px, -20px);
+.general2:hover .fotos2 {
+    transform: translate(-10px, -10px);
     transition-timing-function: linear;
     transition-duration: 200ms;
 }
-.fotos3:hover {
-    transform: translate(-20px, -20px);
+.general3:hover .fotos3{
+    transform: translate(-10px, -10px);
     transition-timing-function: linear;
     transition-duration: 200ms;
 }
@@ -288,6 +342,7 @@ p {
     position: relative;    
     width: 56px;
     height: 56px;
+    margin: -1.5px;
 }
 .fotos1 img:hover {
     background-color: #95e1d3;
@@ -311,6 +366,7 @@ p {
     position: relative;
     width: 56px;
     height: 56px;
+    margin: -1.5px;
 }
 .fotos2 img:hover {
     background-color: #95e1d3;
@@ -326,6 +382,7 @@ p {
     top: 0;
     left: 0;
 }
+
 .blocks33 img {
     top: 200px;
     left: 70px;
@@ -333,6 +390,7 @@ p {
     position: relative;
     width: 56px;
     height: 56px;
+    margin: -1.5px;
 }
 .fotos3 img:hover {
     background-color: #95e1d3;
@@ -381,6 +439,7 @@ a {
 
 
 figcaption {
+    color: #333333;
     line-height: 14px;
     text-align: center;
 }
