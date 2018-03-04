@@ -13,6 +13,8 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: #95e1d3;
+    position: relative;
+    top: 20px;
 }
 
 ul{
@@ -21,8 +23,7 @@ ul{
 
 ul .menu li{
     display: inline;
-    margin-right: 5px;
-    padding: 10px;
+  
 }
 .menu-about {
     position: relative;
@@ -44,97 +45,40 @@ ul .menu li{
     position: relative;
     display: inline-flex;
 }
-
-
+li {
+    margin: 15px;
+}
 
 li a{
     font-family: 'Montserrat', sans-serif;
     color: #95e1d3;
     font-size: 14px;
     text-decoration: none;
-    padding: 20px;
+    
 }
 li a:hover {
     color: #f38181;
     transition-timing-function: linear;
     transition-duration: 200ms;
 }
+li a::after {
+    display: none;
+    content: '';
+    background: #f38181;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 25px;
+    left: 0;
+}
+li a:hover:after{
+    display: block;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
 
-.menu-about::after{
-    display: none;
-    content: '';
-    background: #f38181;
-    position: absolute;
-    width: 52px;
-    height: 3px;
-    bottom: 5px;
-    left: 20px;  
-}
-.menu-about:hover:after {
-    display: block;
-    transition-timing-function: linear;
-    transition-duration: 200ms;
-}
-.menu-service::after {
-    display: none;
-    content: '';
-    background: #f38181;
-    position: absolute;
-    width: 62px;
-    height: 3px;
-    bottom: 5px;
-    left: 20px; 
-}
-.menu-service:hover:after {
-    display: block;
-    transition-timing-function: linear;
-    transition-duration: 200ms;
-}
-.menu-work::after {
-    display: none;
-    content: '';
-    background: #f38181;
-    position: absolute;
-    width: 48px;
-    height: 3px;
-    bottom: 5px;
-    left: 20px;
-}
-.menu-work:hover:after {
-    display: block;
-    transition-timing-function: linear;
-    transition-duration: 200ms;
-}
-.menu-blog::after {
-    display: none;
-    content: '';
-    background: #f38181;
-    position: absolute;
-    width: 48px;
-    height: 3px;
-    bottom: 5px;
-    left: 20px;
-}
-.menu-blog:hover:after {
-    display: block;
-    transition-timing-function: linear;
-    transition-duration: 200ms;
-}
-.menu-contact::after {
-    display: none;
-    content: '';
-    background: #f38181;
-    position: absolute;
-    width: 70px;
-    height: 3px;
-    bottom: 5px;
-    left: 20px;
-}
-.menu-contact:hover:after {
-    display: block;
-    transition-timing-function: linear;
-    transition-duration: 200ms;
-}
+
+
 .block2 {
     display: flex;
     flex-direction: column;
@@ -150,7 +94,7 @@ li a:hover {
     left: 15px;
     margin-top: 20px;
 }
-.kaushan {
+h2 {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     font-weight: normal;
@@ -283,8 +227,6 @@ p {
 }
 .block7 {
     display: flex;
-    position: relative;
-    top: 20px;
 }
 
 .general1 {
