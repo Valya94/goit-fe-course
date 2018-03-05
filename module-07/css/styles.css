@@ -1,3 +1,42 @@
+* {
+    outline: 0 !important;
+  }
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v12-latin-regular.eot');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), 
+         url('../fonts/montserrat-v12-latin-regular.woff') format('woff'),
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v12-latin-700.eot');
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), 
+         url('../fonts/montserrat-v12-latin-700.woff') format('woff'), 
+  }
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-slab-v7-latin-regular.eot'); 
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'), 
+         url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff'), 
+  }
+  @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+  @import url('https://fonts.googleapis.com/css?family=Cookie|Dancing+Script');
+ p {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    line-height: 20px;
+  }
 .container {
     color: white;
     width: 950px;
@@ -10,14 +49,14 @@
 .block1 {
     display: flex;
     justify-content: space-between;
-
 }
 .logo {
+    font-family: 'Dancing Script', cursive;
     color: #fed136;
-    font-family: arial;
     font-size: 26px;
     text-decoration: none;
-
+    position: relative;
+    top: 20px;
 }
 ul {
     list-style: none;
@@ -44,6 +83,7 @@ ul {
     display:inline-flex;
 }
 li a {
+    font-family: 'Montserrat', sans-serif;
     color: black;
     font-size: 14px;
     text-decoration: none;
@@ -57,11 +97,14 @@ li a:hover {
     flex-direction: column;
     text-align: center;
 }
-h1 {
+.font1 {
+    font-family: 'Montserrat-Bold', sans-serif;
     color: #222222;
     font-size: 40px;
 }
-h6 {
+.font2 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Cookie', cursive;
     color: #777777;
     font-size: 16px; 
 }
@@ -84,7 +127,7 @@ h6 {
 }
 .images-1 {
     position: relative;
-    right: 40px;
+    right: 42px;
     bottom: 20px;
 }
 .circle-2 {
@@ -102,7 +145,7 @@ h6 {
 }
 .images-2 {
     position: relative;
-    right: 40px;
+    right: 42px;
     bottom: 20px;
 }
 .circle-3 {
@@ -128,11 +171,6 @@ h3 {
     color: #222222;
     font-size: 18px;
 }
-p {
-    color: #777777;
-    font-size: 14px;
-}
-
 
 .s2 {
     background-image: url(../img/background_2.png);
@@ -142,4 +180,59 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.font1-white {
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: white;
+}
+.block5 {
+    display: flex;
+    flex-direction: column;
+}
+.form1 form input {
+    width: 420px;
+    height: 45px;
+    margin: 15px;
+    border-radius: 3px;
+}
+.form2 form input {
+    width: 420px;
+    height: 45px;
+    margin: 15px;
+    border-radius: 3px;
+}
+.form3 form input {
+    width: 420px;
+    height: 45px;
+    margin: 15px;
+    border-radius: 3px;
+}
+.block6 {
+    display: flex;
+    margin: 15px;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+.form4 form input {
+    width: 420px;
+    height: 210px;
+    border-radius: 3px;
+    right: 30px;
+}
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.block7 {
+    display: flex;
+    justify-content: center;
+   
+}
+button {
+    width: 240px;
+    height: 60px;
+    background-color: #fed136;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 50px;
 }
