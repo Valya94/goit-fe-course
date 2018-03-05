@@ -76,7 +76,9 @@ li a:hover:after{
     transition-timing-function: linear;
     transition-duration: 200ms;
 }
-
+span {
+    display: block;
+}
 
 
 .block2 {
