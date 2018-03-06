@@ -259,8 +259,7 @@ p {
     display: flex;
     position: relative;
     width: 380px;
-    height: 470px;
-    
+    height: 470px;  
 }
 .fotos1 img {
     position: absolute;
@@ -283,7 +282,6 @@ p {
     transition-duration: 200ms;
 }
 
-
 .blocks11 img {
     top: 200px;
     left: 70px;
@@ -293,7 +291,7 @@ p {
     height: 56px;
     margin: -1.5px;
 }
-.fotos1 img:hover {
+.blocks11 img:hover {
     background-color: #95e1d3;
 }
 
@@ -317,7 +315,7 @@ p {
     height: 56px;
     margin: -1.5px;
 }
-.fotos2 img:hover {
+.blocks22 img:hover {
     background-color: #95e1d3;
 }
 .fotos3 {
@@ -326,12 +324,11 @@ p {
     width: 380px;
     height: 470px;
 }
-.fotos3 img {  
-    position: absolute;
+.fotos3 img { 
+    position: absolute; 
     top: 0;
     left: 0;
 }
-
 .blocks33 img {
     top: 200px;
     left: 70px;
@@ -341,21 +338,21 @@ p {
     height: 56px;
     margin: -1.5px;
 }
-.fotos3 img:hover {
+.blocks33 img:hover {
     background-color: #95e1d3;
 }
 
-.fotos1:hover .blocks1 {
+.fotos1:hover .blocks1{
     display: block;
-    cursor: pointer;
+  
 }
 .fotos2:hover .blocks2 {
     display: block;
-    cursor: pointer;
+   
 }
 .fotos3:hover .blocks3 {
     display: block;
-    cursor: pointer;
+    
 }
 .blocks1 {
     display: none;
