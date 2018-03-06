@@ -28,6 +28,7 @@ h2 {
     margin-left:auto;
     margin-top: 230px;
     width: 1024px;
+    margin-bottom: 250px;
 }
 .block1{
     width: 1024px;
@@ -54,6 +55,7 @@ h4 {
     
 }
 p {
+    color: #4e5050;
     font-family: Arial;
     font-size: 13px;
     line-height: 19px;
@@ -79,7 +81,7 @@ img {
 hr {
     border: none;
     background-color:  #dedbdb;
-    height: 2px;
+    height: 1px;
     width: 925px;
     margin-left: 5%;
 }
@@ -129,7 +131,7 @@ li {
     width: 210px;
     height: 190px;
     background: #fcfafa;
-    outline: 2px solid  rgba(223, 220, 220, 1);
+    outline: 1px solid  rgba(223, 220, 220, 1);
     padding: 5%;
 }
 .paragraph {
@@ -158,14 +160,13 @@ h3 {
 
 .ul .nav{
     list-style: none;
-    display:block;
+    display:inline-block;
     width:49%;
-    float:left;
 }
 
 
 .nav {
-    
+    color: #263555;
     font-family: Arial; 
     font-size: 15px;
     line-height: 40px; 

@@ -11,16 +11,19 @@ body {
     background-color: white;
     margin-right:auto;
     margin-left:auto;
-    width: 480px;      
+    margin-top: 240px;
+    width: 480px;   
+    margin-bottom: 30%;   
 }
 img {
     height: 98px;
-    width: 406px;
+    width: 405px;
 }
 p {
-    color: black;
-    
-    
+    color: #4e5050;    
+}
+.grey {
+    color: #676f81;
 }
 .text{
     font-family: Arial;
@@ -28,21 +31,14 @@ p {
     line-height: 17px;
     font-weight: normal;
     font-size: 12px;
-    padding: 6%;
+    padding: 7%;
     color: #263555;
-    
-    
-
 }
 h4 {
     font-family: Arial;
     font-size: 14px;
     line-height: 19px;
-    transform: 100%;
     font-weight: normal;
-}
-    img {
-    width: 430px;   
 }
 hr {
     border: none;
@@ -50,16 +46,19 @@ hr {
     height: 1px;
 }
 .content{
-    font-size: 0%;
+    margin-bottom: 40%;
 }
 
-ul{
-    display: inline-block;
+
+ul li{
+    display: block;
     width: 50%;
-    list-style: none;    
+    list-style: none;  
+    float: left;  
 }
 li {
     font-size: 14px;
+    line-height: 30px; 
 }
 *{
     box-sizing: border-box;
