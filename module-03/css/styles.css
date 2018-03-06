@@ -54,7 +54,7 @@ ul li{
     display: block;
     width: 50%;
     list-style: none;  
-    float: left;  
+    float: left; 
 }
 li {
     font-size: 14px;
