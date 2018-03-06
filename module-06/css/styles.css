@@ -341,25 +341,23 @@ p {
 .blocks33 img:hover {
     background-color: #95e1d3;
 }
-
-.fotos1:hover .blocks1{
-    display: block;
-  
+.general1:hover .blocks1 {
+   display: block;
 }
-.fotos2:hover .blocks2 {
+
+.general2:hover .blocks2 {
     display: block;
    
 }
-.fotos3:hover .blocks3 {
-    display: block;
-    
+.general3:hover .blocks3 {
+    display: block; 
 }
+
 .blocks1 {
     display: none;
     position: absolute;
     width: 380px;
     height: 470px;
-    
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 }
 .blocks2 {
@@ -376,7 +374,7 @@ p {
     height: 470px;
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 }
-div
+
 
 a {
     text-decoration: none;
