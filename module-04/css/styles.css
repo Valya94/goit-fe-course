@@ -3,7 +3,6 @@ h2 {
     color: #263555;
     font-size: 32px;
     font-weight: 400;
-
 }
 body {
     background-image: url(../img/background.png);
@@ -18,9 +17,7 @@ article {
     counter-increment: count-article1;
     counter-reset: count-healine;
 }
-h2 {
-    counter-increment: count-healine;
-}
+
 
 .wrapper {
     background-color: white;
@@ -51,8 +48,7 @@ h4 {
     font-size: 15px;
     line-height: 19px;
     color: #263555;
-    
-    
+    font-weight: 400; 
 }
 p {
     color: #4e5050;
