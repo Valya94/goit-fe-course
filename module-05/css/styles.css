@@ -99,6 +99,7 @@ li:hover ul {
 .menu-journey{
     position: relative;
     display: inline-block;
+    top: 15px;
 }
 .menu-journey > a{
     color: #263555;
@@ -158,7 +159,9 @@ li:hover ul {
     position: relative;
 }
 .text_block1 {
-    position: absolute; top: 270px; left: 61px;
+    position: absolute; 
+    top: 270px; 
+    left: 61px;
     font-family: "Pathway Gothic One";
     font-size: 23px;
     color: #263555;
@@ -172,7 +175,9 @@ li:hover ul {
     background: white;  
 }
 .text_foto2 {
-    position: absolute; top: 330px; left: 61px;
+    position: absolute; 
+    top: 330px; 
+    left: 61px;
     font-family: "Pathway Gothic One";
     font-size: 35px;
     color: white;
@@ -198,7 +203,6 @@ li:hover ul {
     border-bottom-left-radius: 40px;
     background: #38afe5;
     display: inline-block;
-    
     color: white;
     border: none;
 }
@@ -219,9 +223,10 @@ img {
     padding: 6%;  
 }
 
-.block2{
+.block2 {
+    position: relative;
     padding: 4%;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
 }
 
 .blocks1 {
@@ -286,7 +291,6 @@ img {
     display: none;
     font-family: Arial;
     font-size: 11px;
-    font-weight: 10;
     position: absolute; top: 24px; left: 24px;
 }
 .blocks3:hover .hover_paris {
@@ -374,6 +378,9 @@ h2 {
     color: #263555;
     padding-left: 20px;
     font-weight: normal;
+}
+.general {
+    margin-bottom: 50px;
 }
 
 
