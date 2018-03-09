@@ -43,10 +43,13 @@
     margin-right: auto;
     margin-left: auto;
 }
-.s1 {
+.section-01 {
     background: white;
 }
-.block1 {
+span {
+    display: block;
+}
+.header {
     display: flex;
     justify-content: space-between;
 }
@@ -110,7 +113,11 @@ li a:hover {
 }
 .block3 {
     display: flex;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
     justify-content: center;
+    
 }
 .circle-1 {
     padding: 20px;
@@ -186,37 +193,47 @@ h3 {
     color: white;
 }
 .block5 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #bbbbbb;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
 }
 .form1 form input {
-    width: 420px;
+    width: 440px;
     height: 45px;
     margin: 15px;
     border-radius: 3px;
+    padding-left: 20px;
 }
+
 .form2 form input {
-    width: 420px;
+    width: 440px;
     height: 45px;
     margin: 15px;
     border-radius: 3px;
+    padding-left: 20px;
 }
 .form3 form input {
-    width: 420px;
+    width: 440px;
     height: 45px;
     margin: 15px;
     border-radius: 3px;
+    padding-left: 20px;
 }
 .block6 {
     display: flex;
+    position: relative;
     margin: 15px;
     font-family: 'Montserrat-Bold', sans-serif;
 }
 .form4 form input {
-    width: 420px;
+    width: 430px;
     height: 210px;
     border-radius: 3px;
     right: 30px;
+    padding-left: 20px;
+   
 }
 .blocks {
     display: flex;
@@ -225,9 +242,9 @@ h3 {
 }
 .block7 {
     display: flex;
-    justify-content: center;
-   
+    justify-content: center; 
 }
+
 button {
     width: 240px;
     height: 60px;
