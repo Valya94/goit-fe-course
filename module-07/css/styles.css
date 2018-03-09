@@ -175,13 +175,14 @@ li a:hover {
 }
 
 h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
     color: #222222;
     font-size: 18px;
 }
 
 .s2 {
     background-image: url(../img/background_2.png);
-    max-width: 1600px;
 }
 .block4 {
     display: flex;
