@@ -123,48 +123,124 @@ h2 {
     width: 280px;
     text-align: center;
     text-indent: 25px;
+
 }
-.e-commerce_1 img {
+.icon-1 {
+    display: flex;
     position: relative;
+    left: 105px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #fed136;
+    justify-content: center;
 }
+.images-1 {
+    position: relative;
+    top: 10px;
+}
+
 .responsive-web_2 {
     padding: 20px;
     width: 280px;
     text-align: center;
     text-indent: 25px;
 }
-.responsive-web_2 img {
+.icon-2 {
+    display: flex;
     position: relative;
+    left: 105px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #fed136;
+    justify-content: center;
 }
-
+.images-2 {
+    position: relative;
+    top: 10px;
+}
 .web-security_3 {
     padding: 20px;
     width: 280px;
     text-align:center;
     text-indent: 25px;
 }
-.web-security_3 img {
+.icon-3 {
+    display: flex;
     position: relative;
-}
-
-#circle {
+    left: 110px;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     border: 3px solid #fed136;
+    justify-content: center;
 }
+.images-3 {
+    position: relative;
+    top: 10px;
+}
+
 
 h3 {
     font-family: 'Montserrat-Bold', sans-serif;
     font-weight: 700;
     color: #222222;
     font-size: 18px;
+    text-align: center;
 }
 
-.section-contact_us {
-    background-image: url(../img/background_2.png);
-    
+footer {
+    background-image: url(../img/background_2.png);  
+
 }
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+.form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-left-text, .form-right-text {
+    padding-left: 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-family:  'Montserrat Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px; 
+    color: #bbbbbb;
+    text-align: left;
+    border: none;
+}
+.form-left-text {
+    width: 440px;
+    height: 45px;
+}
+.form-right-text {
+    padding-top: 20px;
+}
+
+.send-message {
+    width: 240px;
+    height: 60px;
+    background-color: #fed136;
+    font-size: 18px;
+    font-family: 'Montserrat Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+    margin: 40px auto 0;
+    border: none;
+}
+
 .title-contact_us {
     display: flex;
     flex-direction: column;
@@ -177,75 +253,15 @@ h3 {
     font-size: 40px;
     font-weight: 700;
 }
-.blocks {
-    padding-top: 30px;
+input:valid {
+    outline: 2px solid green;
 }
-.form_3 {
-    font-family: 'Montserrat-Bold', sans-serif;
-    color: #bbbbbb;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
+input:invalid {
+    outline: 2px solid red;
 }
-.form_your_name form input {
-    width: 440px;
-    height: 45px;
-    margin: 15px;
-    border-radius: 3px;
-    padding-left: 20px;
-    border: none;
+textarea:valid {
+    outline: 2px solid green;
 }
-
-.form_your_e-mail form input {
-    width: 440px;
-    height: 45px;
-    margin: 15px;
-    border-radius: 3px;
-    padding-left: 20px;
-    border: none;
-}
-.form_subject form input {
-    width: 440px;
-    height: 45px;
-    margin: 15px;
-    border-radius: 3px;
-    padding-left: 20px;
-    border: none;
-}
-.form_1 {
-    display: flex;
-    position: relative;
-    margin: 15px;
-    font-family: 'Montserrat-Bold', sans-serif;
-}
-.form_your_message form input {
-    width: 430px;
-    height: 200px;
-    border-radius: 3px;
-    right: 30px;
-    padding-left: 20px;
-    border: none;
-   
-}
-.blocks {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.button {
-    display: flex;
-    justify-content: center; 
-}
-
-button {
-    font-family: 'Montserrat-Bold', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    width: 240px;
-    height: 60px;
-    background-color: #fed136;
-    color: white;
-    border-radius: 3px;
-    margin-bottom: 100px;
-    border: none;
+textarea:invalid {
+    outline: 2px solid red;
 }
