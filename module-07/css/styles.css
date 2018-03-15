@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Dancing+Script');
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -21,11 +23,7 @@
     src: url('../fonts/roboto-slab-v7-latin-regular.eot'); 
     src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
          url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'), 
- 
   }
-  @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-  @import url('https://fonts.googleapis.com/css?family=Cookie|Dancing+Script');
- 
 body {
     margin: 0;
 }  
@@ -43,9 +41,6 @@ p {
 }
 .section-services {
     background: white;
-}
-span {
-    display: block;
 }
 .header {
     display: flex;
@@ -99,16 +94,17 @@ li a:hover {
     text-align: center;
     padding-top: 40px;
 }
-.montserrat-bold {
+.montserrat-black {
     font-family: 'Montserrat-Bold', sans-serif;
     color: #222222;
     font-size: 40px;
+    margin-bottom: -10px;
 }
-h2 {
+.dansing-skript {
     font-family: 'Dancing Script', cursive;
     font-family: 'Cookie', cursive;
     color: #777777;
-    font-size: 16px; 
+    font-size: 16px;
 }
 .list {
     display: flex;
@@ -122,13 +118,10 @@ h2 {
     padding: 20px;
     width: 280px;
     text-align: center;
-    text-indent: 25px;
-
 }
 .icon-1 {
-    display: flex;
-    position: relative;
-    left: 105px;
+    display: inline-flex;
+    text-align: center;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -144,12 +137,10 @@ h2 {
     padding: 20px;
     width: 280px;
     text-align: center;
-    text-indent: 25px;
 }
 .icon-2 {
-    display: flex;
-    position: relative;
-    left: 105px;
+    display: inline-flex;
+    text-align: center;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -164,12 +155,10 @@ h2 {
     padding: 20px;
     width: 280px;
     text-align:center;
-    text-indent: 25px;
 }
 .icon-3 {
-    display: flex;
-    position: relative;
-    left: 110px;
+    display: inline-flex;
+    text-align: center;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -198,6 +187,7 @@ footer {
 .form {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 .form-left {
     display: flex;
@@ -225,7 +215,7 @@ footer {
     padding-top: 20px;
 }
 
-.send-message {
+.button {
     width: 240px;
     height: 60px;
     background-color: #fed136;
@@ -253,6 +243,7 @@ footer {
     color: white;
     font-size: 40px;
     font-weight: 700;
+    margin-bottom: -10px;
 }
 input:valid {
     outline: 2px solid green;
