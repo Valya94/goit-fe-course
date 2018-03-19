@@ -40,15 +40,10 @@ nav {
     padding: 5px;
 }
 .menu-item {
-    
     border: 2px solid #fff;
     border-radius: 20px;
     padding: 5px;
 }
-/*.menu-item:hover {
-    border: 2px solid #fff;
-    border-radius: 20px;
-}*/
 .link-menu {
     color: white;
     font-family: 'Montserrat Bold', sans-serif;
