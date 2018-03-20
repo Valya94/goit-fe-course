@@ -55,6 +55,7 @@ nav {
     text-align: center;
 }
 .logo-text {
+    color: white;
     font-family: 'Montserrat Bold', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
@@ -153,14 +154,19 @@ h1 {
     font-family: 'Roboto Light', sans-serif;
     font-size: 14px;
     color: #666;
-    flex-wrap: lighter;
 }
-.see-partners {
+button {
+    background-color: white;
+    outline: none;
+    display: flex;
+}
+.see-partners{
+    
     font-family: 'Montserrat Bold', sans-serif;
     font-size: 14px;
     color: #ff4e50;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 35px;
     margin: 30px auto 0;
     border: 2px solid #ff4e50;
     border-radius: 25px;
@@ -224,7 +230,6 @@ h1 {
         width: 960px;
     }
     .list {
-        flex-wrap: none;
         flex-basis: 24%;
         margin-bottom: 0;
     }
