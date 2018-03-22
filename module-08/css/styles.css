@@ -30,13 +30,13 @@ img {
     padding: 0 10px;
     margin: auto;
 }
-nav {
-    margin-bottom: 115px;
-}
+
 .menu {
     display: flex;
     justify-content: center;
-}
+    margin-bottom: 115px;
+    }
+
 .item {
     padding: 5px;
 }
@@ -44,6 +44,7 @@ nav {
     border: 2px solid #fff;
     border-radius: 20px;
     padding: 5px;
+   
 }
 .link-menu {
     color: white;
@@ -80,14 +81,17 @@ h1 {
     font-weight: lighter;
 }
 .sub-title {
+    display: flex;
     font-family: 'Montserrat Bold', sans-serif;
     font-size: 14px;
     font-weight: 700;
+    color: white;
     background-color: #ff4e50;
     border-radius: 20px;
     text-align: center;
-    padding: 14px 0;
+    padding: 14px 25px;
     margin: 30px auto 0;
+    border: none;
 }
 .main {
     padding: 70px 0 57px;
@@ -231,9 +235,11 @@ button {
         width: 960px;
     }
     .list {
-        flex-basis: 24%;
+        flex-basis: 25%;
         margin-bottom: 0;
     }
+}
+  
 
 
 
