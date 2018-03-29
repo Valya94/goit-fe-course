@@ -93,8 +93,9 @@ h1 {
     font-family: 'Montserrat Bold', sans-serif;
     font-size: 22px;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
+    width: 1200px;
 }
 .box {
     text-align: center;
