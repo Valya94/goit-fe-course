@@ -5,42 +5,68 @@ const tourSharm = 15;
 const tourHurgada = 25;
 
 
-const tourSelection = Number(prompt('Введите необходимое количество мест: '));
-console.log(tourSelection);
+const tourUser = prompt('Введите необходимое количество мест: ');
+console.log(tourUser);
+console.log(typeof tourUser);
 
-if (!Number.isNaN(tourSelection) && tourSelection !== 0) {
-
-    if (tourSelection <= tourTaba) {
-        let userСhoice = confirm('Есть место в группе Taba. Вы хотите быть в этой группе?');
-
-        if (userСhoice) {
-            let remainingPlaces = tourTaba - tourSelection;
-            console.log(remainingPlaces);
+if (typeof Number.parseInt(tourUser) === 'number' && !Number.isNaN(tourUser) && (Number.parseInt(tourUser) > 0)) {
+    if (tourUser <= tourTaba) {
+       let answerUser = confirm ('Есть места в группе Taba. Вы согласны быть в этой группе?');
+       if (answerUser) {
+            tourTaba = tourTaba - tourUser;
             alert('Приятного путешествия в группе Taba!');
+       } else {
+           if (tourUser <= tourSharm) {
+                let answerUser = confirm ('Есть места в группе Sharm. Вы согласны быть в этой группе?');
+                if (answerUser) {
+                    tourSharm = tourSharm - tourUser;
+                    alert('Приятного путешествия в группе Sharm!');
+                } else {
+                    if (tourUser <= tourHurgada) {
+                        let tourUser = confirm ('Есть места в группе Hurgada. Вы согласны быть в этой группе?');
+                        if (tourUser) {
+                            tourHurgada = tourHurgada - tourUser;
+                            alert('Приятного путешествия в группе Hurgada!');
+                        } else {
+                            alert('Изините, мест нет.');
+                        }
+                   }
+               }
+           }
+       }
+    } else {
+        if (tourUser <= tourSharm) {
+            let answerUser = confirm ('Есть места в группе Sharm. Вы согласны быть в этой группе?');
+            if (answerUser) {
+                tourSharm = tourSharm - tourUser;
+                alert('Приятного путешествия в группе Sharm!');
         } else {
-            alert("Нам очень жаль, приходите еще!");
+            if (tourUser <= tourHurgada) {
+                let answerUser = confirm ('Есть места в группе Hurgada. Вы согласны быть в этой группе?');
+                if (answerUser) {
+                    tourHurgada = tourHurgada - tourUser;
+                    alert('Приятного путешествия в группе Hurgada!');
+             } else {
+                 alert('Изините, мест нет.');
+                }
+            }
         }
-    } else if (tourSelection <= tourSharm) {
-        let userСhoice = confirm('Есть место в группе Sharm. Вы хотите быть в этой группе?');
-
-        if (userСhoice) {
-            let remainingPlaces = tourSharm - tourSelection;
-            console.log(remainingPlaces);
-            alert('Приятного путешествия в группе Sharm!');
-        } else {
-            alert("Нам очень жаль, приходите еще!");
-        }
-    } else if (tourSelection <= tourHurgada) {
-        let userСhoice = confirm('Есть место в группе Hurgada. Вы хотите быть в этой группе?');
-
-        if (userСhoice) {
-            let remainingPlaces = tourHurgada - tourSelection;
-            console.log(remainingPlaces);
+    
+   } else {
+       if (tourUser <= tourHurgada) {
+        let answerUser = confirm ('Есть места в группе Hurgada. Вы согласны быть в этой группе?');
+        if (answerUser) {
+            tourHurgada = tourHurgada - tourUser;
             alert('Приятного путешествия в группе Hurgada!');
         } else {
-            alert("Нам очень жаль, приходите еще!");
+            alert('Изините, мест нет.');
+            }
+        }
+        else {
+            alert('Изините, мест нет.');
         }
     }
+}
 } else {
-    alert("Ошибка ввода");
+    alert('Ошибка ввода.');
 }
