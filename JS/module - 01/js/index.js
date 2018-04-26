@@ -13,19 +13,19 @@ if (typeof Number.parseInt(tourUser) === 'number' && !Number.isNaN(tourUser) && 
     if (tourUser <= tourTaba) {
        let answerUser = confirm ('Есть места в группе Taba. Вы согласны быть в этой группе?');
        if (answerUser) {
-            tourTaba = tourTaba - tourUser;
+            tourTaba - tourUser;
             alert('Приятного путешествия в группе Taba!');
        } else {
            if (tourUser <= tourSharm) {
                 let answerUser = confirm ('Есть места в группе Sharm. Вы согласны быть в этой группе?');
                 if (answerUser) {
-                    tourSharm = tourSharm - tourUser;
+                    tourSharm - tourUser;
                     alert('Приятного путешествия в группе Sharm!');
                 } else {
                     if (tourUser <= tourHurgada) {
                         let tourUser = confirm ('Есть места в группе Hurgada. Вы согласны быть в этой группе?');
                         if (tourUser) {
-                            tourHurgada = tourHurgada - tourUser;
+                            tourHurgada - tourUser;
                             alert('Приятного путешествия в группе Hurgada!');
                         } else {
                             alert('Изините, мест нет.');
@@ -38,13 +38,13 @@ if (typeof Number.parseInt(tourUser) === 'number' && !Number.isNaN(tourUser) && 
         if (tourUser <= tourSharm) {
             let answerUser = confirm ('Есть места в группе Sharm. Вы согласны быть в этой группе?');
             if (answerUser) {
-                tourSharm = tourSharm - tourUser;
+                tourSharm - tourUser;
                 alert('Приятного путешествия в группе Sharm!');
         } else {
             if (tourUser <= tourHurgada) {
                 let answerUser = confirm ('Есть места в группе Hurgada. Вы согласны быть в этой группе?');
                 if (answerUser) {
-                    tourHurgada = tourHurgada - tourUser;
+                    tourHurgada - tourUser;
                     alert('Приятного путешествия в группе Hurgada!');
              } else {
                  alert('Изините, мест нет.');
@@ -56,7 +56,7 @@ if (typeof Number.parseInt(tourUser) === 'number' && !Number.isNaN(tourUser) && 
        if (tourUser <= tourHurgada) {
         let answerUser = confirm ('Есть места в группе Hurgada. Вы согласны быть в этой группе?');
         if (answerUser) {
-            tourHurgada = tourHurgada - tourUser;
+            tourHurgada - tourUser;
             alert('Приятного путешествия в группе Hurgada!');
         } else {
             alert('Изините, мест нет.');
