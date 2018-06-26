@@ -14,7 +14,7 @@ const addLogin = (logins, login) => {
   
   let isRange = checkLoginValidity(login);
   if (!isRange) {
-    alert('Ошибка! Логин должен быть от 4 до 16 символов');
+    alert('Ошибка! Логин должен быть от 4 до 16 символов.');
     return;
   }
  
@@ -33,7 +33,3 @@ const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 const login = prompt('Введите логин:');
 
 addLogin(logins, login);
-
-
-
-
