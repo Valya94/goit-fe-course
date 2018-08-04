@@ -95,3 +95,29 @@ const users = [{
 
 const getAllNames = arr => arr.map(user => user.name);
 console.log('All names:', getAllNames(users));
+
+const getUsersByEyeColor = (arr, color) => arr.filter(user => user.eyeColor === color);
+console.log('sort by color of eyes:', getUsersByEyeColor(users, 'blue')); 
+
+const getUsersByGender = (arr, gender) => arr.filter(user => user.gender === gender);
+console.log('sort by gender', getUsersByGender(users, 'male'));
+
+const getInactiveUsers = arr => arr.filter(user => !user.isActive);
+console.log('Not active users', getInactiveUsers(users)); 
+
+const getUserByEmail = (arr, email) => arr.find(user => user.email === email);
+console.log('find by Email 1', getUserByEmail(users, 'shereeanthony@kog.com'));
+console.log('find by Email 2', getUserByEmail(users, 'elmahead@omatom.com')); 
+
+const getUsersWithAge = (arr, min, max) => arr.filter(user => user.age >= min && user.age <= max);
+
+console.log('Users between 20 and 30', getUsersWithAge(users, 20, 30)); 
+
+console.log('Users between 30 and 40', getUsersWithAge(users, 30, 40));
+
+const getTotalBalance = arr => arr.reduce((acc, value) => acc + value.balance, 0);
+console.log('total baalance', getTotalBalance(users)); 
+
+const getUsersByFriend = (arr, name) => arr.filter(user => user.friends.includes(name));
+console.log('Friends of Briana Decker', getUsersByFriend(users, 'Briana Decker')); 
+console.log('Friends of Goldie Gentry', getUsersByFriend(users, 'Goldie Gentry')); 
