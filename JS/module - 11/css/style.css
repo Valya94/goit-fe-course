@@ -1,0 +1,39 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .buttons {
+    margin-top: 40px;
+  }
+  
+  .filter {
+    margin-right: 10px;
+  }
+  
+  .form {
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    margin: auto;  
+  }
+  
+  .list-group{
+      margin-bottom: 20px;
+  }
