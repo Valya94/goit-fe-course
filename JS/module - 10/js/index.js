@@ -1,156 +1,143 @@
-(() => {
-    
-    'use strict';
-  
-    const getBtn = document.querySelector('.js-get');
-    const resultGetAll = document.querySelector('.js-result-all');
-    const addUserBtn = document.querySelector('.js-submit-add');
-    const resultID = document.querySelector('.js-result-id');
-    const input = document.querySelector('input');
-    const searchBtn = document.querySelector('.js-submit-search');
-    const apiUrl = 'https://test-users-api.herokuapp.com/users/';
-    const inputAddName = document.querySelector('.name-user');
-    const inputAddAge = document.querySelector('.age-user');
-    const removeIdBtn = document.querySelector('.js-submit-remove');
-    const inputRemove = document.querySelector('.js-remove');
-    const inputUpdateId = document.querySelector('.js-user-id');
-    const inputUpdateName = document.querySelector('.js-user-name');
-    const inputUpdateAge = document.querySelector('.js-user-age');
-    const updateBtn = document.querySelector('.js-submit-update');
-  
-    getBtn.addEventListener('click', getAllUsers);
-    searchBtn.addEventListener('click', getUserById);
-    addUserBtn.addEventListener('click', addUser);
-    removeIdBtn.addEventListener('click', removeUser);
-    updateBtn.addEventListener('click', updateUser);
-  
-    function updateUser(user) {
-      user.preventDefault();
-  
-      const newUser = {
-        name: inputUpdateName.value,
-        age: inputUpdateAge.value,
-      };
-  
-      fetch(apiUrl + inputUpdateId.value, {
-        method: 'PUT',
-        body: JSON.stringify(newUser),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-      })
-        .then(response => response.json())
-        .then(data => {
-          console.log(data);
+'use strict';
+
+const btnGetAllUsers = document.querySelector(".js-getAllUsers");
+const btnGetUserById = document.querySelector(".js-getUserById");
+const btnAddUser = document.querySelector(".js-addUser");
+const btnRemoveUser = document.querySelector(".js-removeUser");
+const btnUpdateUser = document.querySelector(".js-updateUser");
+
+const form = document.querySelector('.form');
+
+const result = document.querySelector(".js-result");
+const apiUrl = "https://test-users-api.herokuapp.com/users/";
+
+let id;
+let name;
+let age;
+
+const handleFormSumit = e => {
+    e.preventDefault();
+   
+    resetResult();
+  };
+
+const updateResult = markup => {
+    result.insertAdjacentHTML('beforeend', markup);
+};
+
+const resetResult = () => {
+    result.innerHTML = '';
+};
+
+const userById = (arr, id) => arr.find(x => x.id === id);
+
+const fetchAllUsers = () => {
+    console.log('AllUsers');
+   return fetch(`${apiUrl}`)
+    .then(response => {
+        if (response.ok) {
+            console.log(response);
+            return response.json();
+        }
+        throw new Error('error: ' + response.statusText);
+    })
+    .then(data => {
+        //console.log(data);
+        return data.data;
         })
-        .catch(error => console.log('ERROR' + error));
-    }
-    function removeUser(id) {
-      id.preventDefault();
-      console.log(inputRemove.value);
-      fetch(apiUrl + inputRemove.value, {
-        method: 'DELETE',
-      })
-        .then(() => {
-          console.log('success');
-        })
-        .catch(error => console.log('ERROR' + error));
-    }
-  
-    function addUser(user) {
-      user.preventDefault();
-      const newUser = {
-        name: inputAddName.value,
-        age: inputAddAge.value,
-      };
-  
-      fetch(apiUrl, {
+    .catch(error => console.log(error));
+}
+
+const createUsersList = (users) => {
+    users = Array.from(users);
+    console.log(users);
+    let markup = `<tr class="headerTable"><th>ID</th><th>Name</th><th>Age</th></tr>`;
+    //let user = {};
+    users.forEach(user => {
+        markup = markup + `<tr class="item"><td>${user.id}</td><td>${user.name}</td><td>${user.age}</td></tr>`;
+    });
+
+    return markup;
+};
+
+const createUserList = (users, inputId) => {
+    users = Array.from(users);
+    const user = userById(users, inputId);
+    console.log(user);
+    let markup = `<li class="item">id: ${user.id}, name: ${user.name}, age: ${user.age}</li>`;
+    return markup;
+};
+
+const getAllUsers = () => {
+    fetchAllUsers().then(items => {
+        const markup = createUsersList(items);
+        updateResult(markup);
+    });
+};
+
+const getUserById = () => {
+    const inputId = document.querySelector(".js-inputId").value;
+    fetchAllUsers().then(items => {
+        const markup = createUserList(items, inputId);
+        updateResult(markup);
+    });
+};
+
+const addUser = () => {
+    const inputUserName = document.querySelector(".js-inputUserName").value;
+    const inputUserAge = document.querySelector(".js-inputUserAge").value;
+
+    const newUser = {
+        name: inputUserName,
+        age: inputUserAge,
+    };
+
+    fetch(apiUrl, {
         method: 'POST',
         body: JSON.stringify(newUser),
         headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-      })
-        .then(response => {
-          if (response.ok) return response.json();
-          throw new Error('Error fetching data');
-        })
-        .then(data => {
-          console.log(data);
-        })
-        .catch(error => {
-          console.log(error);
-        });
-    }
-  
-    function getUserById(id) {
-      id.preventDefault();
-      console.log(input.value);
-  
-      fetch(apiUrl + input.value)
-        .then(response => {
-          if (response.ok) return response.json();
-          throw new Error('Error fetching data');
-        })
-        .then(data => {
-          renderingGetUserById(data);
-        })
-        .catch(error => {
-          console.log(error);
-        });
-    }
-  
-    function renderingGetUserById(data) {
-      resultID.innerHTML = `<div class = "result-user"><p>ID: ${data.data.id}</p>
-                 <p>Name: ${data.data.name}</p> 
-                 <p>Age: ${data.data.age}</p></div>`;
-    }
-    /*
-    @param {FormEvent} evt
-  */
-    function getAllUsers(evt) {
-      evt.preventDefault();
-  
-      fetch(apiUrl)
-        .then(response => {
-          if (response.ok) return response.json();
-          throw new Error('Error fetching data');
-        })
-        .then(data => {
-          rendering(data);
-        })
-        .catch(error => {
-          console.log(error);
-        });
-    }
-  
-    function rendering(data) {
-      const table = document.createElement('table');
-      const headerCol = document.createElement('tr');
-      const headerCel1 = document.createElement('th');
-      headerCel1.textContent = 'ID';
-  
-      const headerCel2 = document.createElement('th');
-      headerCel2.textContent = 'NAME';
-  
-      const headerCel3 = document.createElement('th');
-      headerCel3.textContent = 'AGE';
-      headerCol.append(headerCel1, headerCel2, headerCel3);
-  
-      data.data.forEach(item => {
-        const column = document.createElement('tr');
-        const cells1 = document.createElement('td');
-        cells1.textContent = `${item.id}`;
-  
-        const cells2 = document.createElement('td');
-        cells2.textContent = `${item.name}`;
-  
-        const cells3 = document.createElement('td');
-        cells3.textContent = `${item.age}`;
-        column.append(cells1, cells2, cells3);
-        table.prepend(headerCol);
-        table.append(column);
-        resultGetAll.append(table);
-      });
-    }
-  })();
+        "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log('ERROR' + error));
+};
+
+const removeUser = () => {
+    const inputRemove = document.querySelector(".js-inputRemove").value;
+    fetch(`${apiUrl}${inputRemove}`, {
+        method: 'DELETE'})
+        .then(() => alert('Remove user'))
+        .catch(error => console.log('ERROR ' + error));
+};
+
+const updateUser = () => {
+    const inputUpdateId = document.querySelector(".js-inputUpdateId").value;
+    const inputUpdateName = document.querySelector(".js-inputUpdateName").value;
+    const inputUpdateAge = document.querySelector(".js-inputUpdateAge").value;
+
+    const userToUpdate = {
+        id: inputUpdateId,
+        name: inputUpdateName,
+        age: inputUpdateAge,
+    };
+
+    fetch(`${apiUrl}${inputUpdateId}`, {
+        method: "PUT",
+        body: JSON.stringify(userToUpdate),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+            },
+    })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(error => console.log('ERROR' + error));
+};
+
+form.addEventListener('submit', handleFormSumit);
+btnGetAllUsers.addEventListener("click", getAllUsers);
+btnGetUserById.addEventListener("click", getUserById);
+btnAddUser.addEventListener("click", addUser);
+btnRemoveUser.addEventListener("click", removeUser);
+btnUpdateUser.addEventListener("click", updateUser);
