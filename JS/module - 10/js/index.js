@@ -1,12 +1,11 @@
 'use strict';
 
-const btnGetAllUsers = document.querySelector(".js-getAllUsers");
-const btnGetUserById = document.querySelector(".js-getUserById");
-const btnAddUser = document.querySelector(".js-addUser");
-const btnRemoveUser = document.querySelector(".js-removeUser");
-const btnUpdateUser = document.querySelector(".js-updateUser");
+const btnGetAllUsers = document.querySelector(".js-get");
+const btnGetUserById = document.querySelector(".js-submit-search");
+const btnAddUser = document.querySelector(".js-submit-add");
+const btnRemoveUser = document.querySelector(".js-submit-remove");
+const btnUpdateUser = document.querySelector(".js-submit-update");
 
-const form = document.querySelector('.form');
 
 const result = document.querySelector(".js-result");
 const apiUrl = "https://test-users-api.herokuapp.com/users/";
@@ -135,7 +134,6 @@ const updateUser = () => {
         .catch(error => console.log('ERROR' + error));
 };
 
-form.addEventListener('submit', handleFormSumit);
 btnGetAllUsers.addEventListener("click", getAllUsers);
 btnGetUserById.addEventListener("click", getUserById);
 btnAddUser.addEventListener("click", addUser);
