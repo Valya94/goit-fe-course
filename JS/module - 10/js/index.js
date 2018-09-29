@@ -1,6 +1,6 @@
 'use strict';
 
-const btnGetAllUsers = document.querySelector(".js-get");
+
 const btnGetUserById = document.querySelector(".js-submit-search");
 const btnAddUser = document.querySelector(".js-submit-add");
 const btnRemoveUser = document.querySelector(".js-submit-remove");
@@ -134,7 +134,7 @@ const updateUser = () => {
         .catch(error => console.log('ERROR' + error));
 };
 
-btnGetAllUsers.addEventListener("click", getAllUsers);
+
 btnGetUserById.addEventListener("click", getUserById);
 btnAddUser.addEventListener("click", addUser);
 btnRemoveUser.addEventListener("click", removeUser);
