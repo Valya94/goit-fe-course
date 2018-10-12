@@ -1,63 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Module10</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-4-lg">
-                    <h2>Get all users</h2>
-                    <form class="search-form centr-get">
-                        <button class="mdc-btn js-get">get</button>
-                    </form>
-                    <p class="result js-result-all"></p>
-                </div>
-                <div class="col-4-lg">
-                    <h2>Search user ID</h2>
-                    <form class="search-form">
-                        <input type="text" name="user" placeholder="Enter ID user">
-                        <button class="mdc-btn js-submit-search bottom">search</button>
-                    </form>
-                    <p class="result js-result-id"></p>
-                </div>
-                <div class="col-4-lg">
-                    <h2>Add new user</h2>
-                    <form class="search-form">
-                        <input type="text" name="user-name" placeholder="Enter name" class="name-user">
-                        <input type="text" name="user-age" placeholder="Enter age" class="age-user">
-                        <button class="mdc-btn js-submit-add bottom">add</button>
-                    </form>
-                </div>
-                <div class="col-4-lg">
-                    <h2>Remove user</h2>
-                    <form class="search-form">
-                        <input type="text" name="user" placeholder="Enter ID" class="js-remove">
-                        <button class="mdc-btn js-submit-remove bottom">remove</button>
-                    </form>
-                </div>
-                <div class="col-4-lg">
-                    <h2>Update user</h2>
-                    <form class="search-form">
-                        <input type="text" name="user-id" placeholder="Enter ID" class="js-user-id">
-                        <input type="text" name="user-name" placeholder="Enter name" class="js-user-name">
-                        <input type="text" name="user-age" placeholder="Enter age" class="js-user-age">
-                        <button class="mdc-btn js-submit-update bottom">Update</button>
-                    </form>
-                </div>
+    <div class="container">
+        <form class="form"> 
+            <div class="formItem">
+                <button class="btn js-getAllUsers">getAllUsers</button>
+            </div> 
+            <div class="formItem">
+                <input type="text" class="inputId js-inputId" placeholder="Enter user ID">
+                <button class="btn js-getUserById">getUserById</button>
             </div>
-        </div>
+            <div class="formItem">
+                <input type="text" class="inputUserName js-inputUserName" placeholder="Enter user Name">
+                <input type="text" class="inputUserAge js-inputUserAge" placeholder="Enter user Age">
+                <button class="btn js-addUser">addUser</button>
+            </div>
+            <div class="formItem">
+                <input type="text" class="inputRemove js-inputRemove" placeholder="Enter user ID">
+                <button class="btn js-removeUser">removeUser</button>
+            </div>
+            <div class="formItem">
+                <input type="text" class="inputUpdateId js-inputUpdateId" placeholder="Enter user ID">
+                <input type="text" class="inputUpdateName js-inputUpdateName" placeholder="Enter new user Name">
+                <input type="text" class="inputUpdateAge js-inputUpdateAge" placeholder="Enter new user Age">
+                <button class="btn js-updateUser">updateUser</button>
+            </div>
+        </form>
+        <table class="result js-result">
+
+        </table>
     </div>
+        
     <script src="js/index.js"></script>
 </body>
-
 </html>
