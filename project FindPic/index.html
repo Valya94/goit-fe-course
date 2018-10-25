@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JS Project</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Roboto&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <a href="/" class="logo"><img src="images/logo.png" alt="logo"></a>
+        <form action="#" class="search-form">
+            <input type="text" class="search-form__input" placeholder="Что вы хотите найти?">
+            <button class="search-form__btn btn">Поиск</button>
+        </form>
+    </header>
+    <main class="main">
+        <ul class="pict-list">
+
+        </ul>
+        <button class="btn__show-more btn js-more">Показать еще</button>
+    </main>
+    <div class="pop-up">
+        <div class="pop-up__wrapper">
+            <img class="pop-up__img" src="images/bynns1-tif.png" alt="img">
+            <div class="pop-up__btns">
+                <div class="pop-up__nav">
+                    <button class="pop-up__btn btn_prev js-prev"></button>
+                    <button class="pop-up__btn btn_next js-next"></button>
+                </div>
+                <button class="pop-up__btn btn_select js-select"></button>
+                <button class="pop-up__btn btn_close js-close"></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<template id = "pict">
+    <li class="pict-list__item">
+        <img class="pict-list__img" src={{img}} alt="{{name}}">
+    </li>
+</template>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>
