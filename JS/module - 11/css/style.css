@@ -1,45 +1,117 @@
-* {
+*{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+}
+*:focus{
+    outline: none;
+}
+body{
+   margin: 0;
+}
+.btn-close{
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.btn-close:after{
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.btn-close::before{
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.btn-close:hover::after,
+.btn-close:hover::before{
+    background: #5c0449;
 }
 
-body {
-    background-color: rgb(207, 212, 212);
-    margin: 0 auto;
+.pop-up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1100;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.pop-up-inner{
+    position: relative;
+    
+    width: 40%;
+    height: 40%;
+    background: #3f3f3e;  ;
+    padding: 30px;
+    padding-top: 70px;
+    color: #5c0449;
+    text-align: center;
+    font-weight: 700;
 }
 
-li {
-    list-style: none;
-}
-
-button {
-    width: 50px;
-    height: 25px;
-}
-
-.form {
-    width: 600px;
-    margin: 20px auto;
+.pop-up-inner span{
+    color: #5c0449;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 24px;
+    background: rgb(148, 140, 147)
+    
+}
+
+.form{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+
+}
+.wrapp-result{
+    background:  rgb(148, 140, 147)
 }
 
-.buttons {
-    align-self: flex-end;
+.choice-result,
+.produkt-list{
+    padding-left: 0;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    list-style-type: none
 }
-
-.result {
-    margin: 30px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.choice-result img,
+.produkt-list img{
+    max-width: 100%;
 }
-
-.card {
-    width: 250px;
-    margin: 10px;
+.choice-result .footer,
+.produkt-list .footer{
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
-    box-shadow: 0 0 10px rgb(84, 8, 87);
+    display: flex;
+    justify-content: space-between;
 }
